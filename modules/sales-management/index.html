@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="order-container">
+        <h1>Add New Order</h1>
+        <form id="orderForm">
+          <label for="orderId">Order ID:</label>
+          <input
+            type="text"
+            id="orderId"
+            placeholder="Enter Order ID"
+            required
+          />
+
+          <label for="customerName">Customer Name:</label>
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter Customer Name"
+            required
+          />
+
+          <label for="contact">Contact:</label>
+          <input
+            type="text"
+            id="contact"
+            placeholder="Enter Contact Details"
+            required
+          />
+
+          <label for="productCategory">Product Category:</label>
+          <select id="productCategory" required></select>
+
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            placeholder="Enter Quantity"
+            required
+            min="1"
+          />
+
+          <label for="status">Status:</label>
+          <select id="status" required>
+            <option value="pending">Pending</option>
+            <option value="processed">Processed</option>
+            <option value="shipped">Shipped</option>
+            <option value="delivered">Delivered</option>
+          </select>
+
+          <label for="orderDate">Order Date:</label>
+          <input type="date" id="orderDate" required />
+
+          <div class="total-price">
+            <strong>Total Price: </strong>
+            <span id="totalPrice">$0.00</span>
+          </div>
+
+          <button type="submit">Add Order</button>
+        </form>
+      </div>
+
+      <div class="search-container">
+        <h2>Search and Filter Orders</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by Customer Name or Product Category"
+        />
+        <select id="statusFilter">
+          <option value="">All Statuses</option>
+          <option value="pending">Pending</option>
+          <option value="processed">Processed</option>
+          <option value="shipped">Shipped</option>
+          <option value="delivered">Delivered</option>
+        </select>
+      </div>
+
+      <div class="order-list-container">
+        <h2>Order List</h2>
+        <table id="orderTable">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer Name</th>
+              <th>Contact</th>
+              <th>Product Category</th>
+              <th>Quantity</th>
+              <th>Total Price ($)</th>
+              <th>Order Status</th>
+              <th>Order Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="revenue-analysis">
+        <h2>Revenue Calculation</h2>
+        <div class="revenue-summary">
+          <strong>Total Revenue: </strong>
+          <span id="totalRevenue">$0.00</span>
+        </div>
+
+        <div class="revenue-per-category">
+          <h3>Revenue Per Category</h3>
+          <ul id="categoryRevenueList"></ul>
+          <div class="report-download-buttons">
+            <button onclick="downloadRevenueReport()">
+              Download Revenue Report (CSV)
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sales-report">
+        <h2>Sales Report</h2>
+        <ul id="salesReportList"></ul>
+        <div class="report-download-buttons">
+          <button onclick="downloadSalesReport()">
+            Download Sales Report (CSV)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Management Module</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Supplier Management Module</h1>
+      <section id="farmers-info">
+        <h2>Farmers' Information</h2>
+        <form id="farmer-form">
+          <label for="farmer-id">Farmer ID:</label>
+          <input type="text" id="farmer-id" required />
+
+          <label for="farmer-name">Name:</label>
+          <input type="text" id="farmer-name" required />
+
+          <label for="farmer-contact">Contact Details:</label>
+          <input type="text" id="farmer-contact" required />
+
+          <label for="farmer-location">Location:</label>
+          <input type="text" id="farmer-location" required />
+
+          <button type="button" id="add-farmer-btn">Add Farmer</button>
+        </form>
+        <div id="farmer-search">
+          <label for="search-input">Search Farmers:</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by Name or Location"
+          />
+        </div>
+        <table id="farmers-table">
+          <thead>
+            <tr>
+              <th>Farmer ID</th>
+              <th>Name</th>
+              <th>Contact</th>
+              <th>Location</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="export-farmers-btn">Export Farmers</button>
+      </section>
+
+      <section id="purchase-records">
+        <h2>Purchase Records</h2>
+
+        <form id="purchase-form">
+          <label for="purchase-id">Purchase ID:</label>
+          <input type="text" id="purchase-id" required />
+
+          <label for="farmer-id-purchase">Farmer ID:</label>
+          <input type="text" id="farmer-id-purchase" required />
+
+          <label for="purchase-date">Date:</label>
+          <input type="date" id="purchase-date" required />
+
+          <label for="purchase-quantity">Quantity (kg):</label>
+          <input type="number" id="purchase-quantity" required />
+
+          <label for="price-per-kg">Price per kg:</label>
+          <input type="number" id="price-per-kg" required />
+
+          <button type="button" id="add-purchase-btn">Add Purchase</button>
+        </form>
+
+        <div id="purchase-sorting">
+          <h3>Sort Purchase Records</h3>
+          <button id="sort-options-btn">Sort Options</button>
+          <div id="sort-options-menu" style="display: none">
+            <button id="sort-date-btn">Sort by Date</button>
+            <button id="sort-farmer-btn">Sort by Farmer ID</button>
+            <button id="sort-amount-btn">Sort by Amount</button>
+          </div>
+        </div>
+
+        <table id="purchase-table">
+          <thead>
+            <tr>
+              <th>Purchase ID</th>
+              <th>Farmer ID</th>
+              <th>Date</th>
+              <th>Quantity</th>
+              <th>Price per kg</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section id="expense-calculation">
+        <h2>Expense Calculation</h2>
+        <button type="button" id="calculate-expenses-btn">
+          Calculate Total Expenses
+        </button>
+        <p id="total-expenses">Total Expenses: $0</p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

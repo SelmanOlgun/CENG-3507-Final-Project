@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Categories</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Categories</h1>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Product Category</th>
+            <th>Weight (kg)</th>
+            <th>Price per Unit ($)</th>
+            <th>Current Quantity</th>
+            <th>Current Stock (kg)</th>
+            <th>Minimum Threshold (kg)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Update Category Price</h2>
+      <form id="updateForm">
+        <label for="category">Select Category:</label>
+        <select id="category"></select>
+
+        <label for="newPrice">New Price per Unit ($):</label>
+        <input
+          type="number"
+          id="newPrice"
+          placeholder="Enter new price"
+          step="0.01"
+          required
+        />
+
+        <button type="submit">Update Price</button>
+      </form>
+
+      <h2>Calculate Total Cost</h2>
+      <form id="costForm">
+        <label for="costCategory">Select Category:</label>
+        <select id="costCategory"></select>
+
+        <label for="quantity">Enter Quantity (units):</label>
+        <input
+          type="number"
+          id="quantity"
+          placeholder="Enter quantity"
+          step="1"
+          required
+        />
+
+        <button type="submit">Calculate Cost</button>
+      </form>
+
+      <h3 id="totalCost">Total Cost: $0.00</h3>
+      <h2>Add Blueberries to Storage</h2>
+      <p id="currentBlueberryStock">Current Blueberry Stock: 0 kg</p>
+      <form id="packagingForm">
+        <label for="packagingCategory">Select Category:</label>
+        <select id="packagingCategory"></select>
+
+        <label for="packagingQuantity">Enter Quantity to Add (units):</label>
+        <input
+          type="number"
+          id="packagingQuantity"
+          placeholder="Enter quantity"
+          step="1"
+          min="1"
+          required
+        />
+
+        <button type="submit">Add to Storage</button>
+      </form>
+      <h2>General Stock Status</h2>
+      <table id="stockStatusTable" border="1">
+        <thead>
+          <tr>
+            <th>Product Category</th>
+            <th>Current Stock (kg)</th>
+            <th>Min Threshold (kg)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <canvas id="stockChart" width="800" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

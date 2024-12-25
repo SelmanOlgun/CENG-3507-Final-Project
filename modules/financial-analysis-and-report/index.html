@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Financial Report</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Comprehensive Financial Report</h1>
+    <div class="form-group">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" required>
+    </div>
+    <div class="form-group">
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" required>
+    </div>
+    <div class="form-group">
+      <label for="taxRate">Tax Rate (%):</label>
+      <input type="number" id="taxRate" value="18" required>
+    </div>
+    <button id="generateReportBtn">Generate Report</button>
+    <div id="report">
+      <h2>Summary</h2>
+      <div id="summary" class="summary"></div>
+      <h2>Product-wise Details</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Category</th>
+            <th>Units Sold</th>
+            <th>Total Revenue ($)</th>
+            <th>Total Profit ($)</th>
+            <th>Average Price per Unit ($)</th>
+          </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+      </table>
+      <h2>Remaining Stock</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Category</th>
+            <th>Remaining Stock (kg)</th>
+          </tr>
+        </thead>
+        <tbody id="stockTableBody"></tbody>
+      </table>
+    </div>
+    <h2>Revenue Distribution</h2>
+    <div class="chart-container">
+      <canvas id="revenuePieChart"></canvas>
+    </div>
+    <h2>Profit Distribution</h2>
+    <div class="chart-container">
+      <canvas id="profitBarChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e4f1fe;
+  color: #22313f;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #34495e;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #22313f;
+}
+
+form {
+  background-color: #e4f1fe;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input, select {
+  background-color: #ffffff;
+  color: #22313f;
+}
+
+button {
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #22313f;
+}
+
+.total-price {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #ffffff;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #dcdcdc;
+}
+
+table th {
+  background-color: #34495e;
+  color: #e4f1fe;
+  font-weight: bold;
+}
+
+table td {
+  color: #333333;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #eef6fc;
+}
+
+.search-container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.search-container input, .search-container select {
+  width: auto;
+  display: inline-block;
+  padding: 0.75rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #22313f;
+}
+
+.revenue-analysis, .sales-report {
+  margin-top: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.revenue-analysis h2, .sales-report h2 {
+  text-align: center;
+  color: #34495e;
+}
+
+.revenue-summary, .revenue-per-category, .sales-report ul {
+  margin: 1rem 0;
+}
+
+.revenue-summary strong, .revenue-per-category h3 {
+  color: #34495e;
+  font-size: 1.2rem;
+}
+
+.revenue-per-category ul, .sales-report ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.revenue-per-category ul li, .sales-report ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.revenue-per-category ul li:last-child, .sales-report ul li:last-child {
+  border-bottom: none;
+}
+
+.revenue-per-category ul li strong, .sales-report ul li strong {
+  color: #22313f;
+}
+
+.revenue-per-category ul li span, .sales-report ul li span {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.report-download-buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.report-download-buttons button {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.report-download-buttons button:hover {
+  background-color: #22313f;
+}

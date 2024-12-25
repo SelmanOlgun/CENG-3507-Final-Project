@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">Blueberry Factory Management System</header>
+    <div class="app">
+      <div class="sidebar">
+        <h2>Modules</h2>
+        <ul>
+          <li>
+            <a href="#" data-module="supplier-management"
+              >Supplier Management</a
+            >
+          </li>
+          <li>
+            <a href="#" data-module="product-categorization"
+              >Product Categorization</a
+            >
+          </li>
+          <li>
+            <a href="#" data-module="sales-management">Sales Management</a>
+          </li>
+          <li>
+            <a href="#" data-module="financial-analysis-and-report"
+              >Financial Analysis and Report</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <iframe
+          id="moduleFrame"
+          src="modules/supplier-management/index.html"
+        ></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

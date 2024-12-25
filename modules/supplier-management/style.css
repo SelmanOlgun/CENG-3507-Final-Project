@@ -1,0 +1,148 @@
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e4f1fe;
+  color: #22313f;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #34495e;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+form {
+  background-color: #e4f1fe;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input {
+  background-color: #ffffff;
+  color: #22313f;
+}
+
+button {
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #22313f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #ffffff;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #dcdcdc;
+}
+
+table th {
+  background-color: #34495e;
+  color: #e4f1fe;
+  font-weight: 600;
+}
+
+table td {
+  color: #333333;
+}
+
+#farmer-search, #purchase-sorting {
+  margin: 1rem 0;
+}
+
+#search-input, #sort-options-btn {
+  width: auto;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#sort-options-menu {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+#sort-options-menu button {
+  width: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#sort-options-menu button:hover {
+  background-color: #22313f;
+}
+
+#expense-calculation {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#total-expenses {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #22313f;
+}
